@@ -1,0 +1,54 @@
+.home-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.banner-titulo {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner-imagens {
+  display: flex;
+  gap: 20px;
+}
+
+.banner-camisa {
+  width: 250px;
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+  .home-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .banner-titulo {
+    font-size: 40px;
+  }
+
+  .banner-imagens {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-camisa {
+    width: 220px;
+  }
+
+  .produtos-grid {
+    grid-template-columns: 1fr;
+  }
+}
